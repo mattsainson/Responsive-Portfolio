@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matt's Bio</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- should this go in a header div? -->
+    <nav>
+        <!-- enclose name and links in one div  -->
+        <!-- his container clear both no float on first use but class used later-->
+        <div class="tab"><h1>Matt Sainson</h1></div>
+        <div class="navlinks">
+            <ul class="navitems">
+                <!-- he made individual links, applied border to left to all and then removed the first 
+                need to override link style-->
+                <li><a href="./index.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="clearfix"></div>
+
+    <main>
+        <section class="contact">
+            <header><h2>Contacts</h2></header>
+            <div class="contactform">
+                <form action="post">
+                    <label for="name">Name</label><br />
+                    <input type="text" name="name" value="enter name"><br />
+                    <label for="email">Email</label><br />
+                    <input type="email" name="email" value="enter email"><br />
+                    <label for="message">Message</label><br />
+                    <textarea name="message" id="message" cols="50" rows="10"></textarea> <br />
+                    <input class="submitbutton" type="submit" value="Submit"><br />
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="clearfix"></div>
+
+    <footer>
+        <span>Copyright &copy; 2018</span>
+    </footer>
+</body>
+</html>
